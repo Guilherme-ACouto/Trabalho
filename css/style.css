@@ -1,0 +1,260 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #adadad;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Fonte moderna */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+}
+
+header img {
+    width: 200px; /* Largura do logo */
+    height: auto; /* Altura ajustável de acordo com a largura */
+}
+
+#menuBtn {
+    background-color: #ffffff; /* Exemplo de cor de fundo */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    text-align: center; /* Centraliza o texto no botão */
+    text-decoration: none; /* Remove decoração do texto, se for o caso */
+    display: inline-block; /* Garante que o botão ocupe apenas o espaço necessário */
+    margin-top: 150px; /* Exemplo de margem superior */
+    float: left; /* Alinha o botão à direita */
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    text-shadow: 2px 2px 4px #2c2c2c;
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+    text-shadow: 2px 2px 4px #2c2c2c;
+}
+
+h3 {
+    color: #333;
+    text-shadow: 2px 2px 8px #2c2c2c;
+}
+
+p {
+    color: #000000;
+    text-align: center;
+    text-shadow: 2px 2px 8px #2c2c2c;
+}
+
+.contact {
+    color: #000000;
+    text-shadow: 2px 2px 4px #2c2c2c;
+}
+
+/* form.html */
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 5px solid #7b7b7b;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+#mainMenu {
+    display: none;
+}
+
+#mainMenu.show {
+    display: block;
+    text-align: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 colunas iguais */
+    gap: 20px; /* Espaço entre as células */
+    padding: 20px;
+    margin: 0 auto; /* Centraliza na tela */
+    max-width: 1000px; /* Largura máxima ajustável */
+    width: 90%; /* Ajuste a largura da grade */
+    justify-content: center; /* Alinha o conteúdo no centro */
+}
+
+.item {
+    border: 5px solid #7b7b7b;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.item img {
+    max-width: 230px; /* Define a largura máxima das imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços em branco abaixo das imagens */
+    margin: 0 auto; /* Centraliza as imagens */
+}
+
+.button-toggle {
+    background-color: #757474; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    text-align: center; /* Centraliza o texto no botão */
+    text-decoration: none; /* Remove decoração do texto, se for o caso */
+    display: inline-block; /* Garante que o botão ocupe apenas o espaço necessário */
+    cursor: pointer; /* Altera o cursor ao passar por cima do botão */
+    border-radius: 8px; 
+    /* Outros estilos que desejar aplicar ao botão */
+}
+
+/* Arquivo styles.css */
+.modal-imagem {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.modal-conteudo {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+    margin: auto;
+}
+
+.fundo-escuro {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com opacidade */
+    z-index: 9998;
+}
+
+.fechar {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    color: #ccc;
+}
+
+.redes-sociais {
+    float: right; /* Alinha à esquerda */
+    
+}
+
+.redes-sociais a img {
+    width: 40px; /* Define a largura */
+    height: 40px; /* Define a altura */
+    margin-right: 18px; /* Adiciona um espaçamento entre os ícones */
+    margin-top: 150px;
+}
+
+.card {
+    border: 5px solid #7b7b7b;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none; /* Não exibido por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* fundo semi-transparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 10px;
+    border: 5px solid #7b7b7b;
+    width: 30%;
+    border-radius: 10px;
+}
+
+/* Estilos para o botão de fechar */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

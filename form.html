@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bonés Guigo - Página Inicial</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="redes-sociais">
+            <a href="https://whatsapp.com"><img src="img/whats.png" alt="WhatsApp"></a>
+            <a href="https://instagram.com"><img src="img/insta.png" alt="Instagram"></a>
+        </div>
+        <img src="img/Logo.png" alt="Logo da Bonés Guigo">
+        <button id="menuBtn">Menu</button>
+        <nav id="mainMenu">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="form.html">Contato</a></li>
+                <li><a href="about.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Formulário para Compra de Bonés</h1>
+        <h2>Entre em Contato</h2>
+        <form id="meuFormulario">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+    
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+    
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        
+    </main>
+    <script src="js/menu.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+</html>

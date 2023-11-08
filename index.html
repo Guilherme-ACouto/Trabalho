@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bonés Guigo - Página Inicial</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="redes-sociais">
+            <a href="https://whatsapp.com"><img src="img/whats.png" alt="WhatsApp"></a>
+            <a href="https://instagram.com"><img src="img/insta.png" alt="Instagram"></a>
+        </div>
+        <img src="img/Logo.png" alt="Logo da Bonés Guigo">
+        <button id="menuBtn">Menu</button>
+        <nav id="mainMenu">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="form.html">Contato</a></li>
+                <li><a href="about.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bonés Guigo</h1>
+        <p>Seja bem-vindo à nossa loja virtual de bonés!</p>
+        <div class="grid-container">
+            <!-- Item 1 -->
+            <div class="item">
+                <div class="image-zoom">
+                    <img src="img/bone1.jpg" alt="Boné 1" class="bone-img" onclick="abrirImagemAmpliada(1)">
+                    <h3>Bone Snapback</h3>
+                    <button class="button-toggle" onclick="exibirDescricao('descricao1')">Ver detalhes</button>
+                    <p id="descricao1" style="display: none;">Elegante e versátil, este snapback em algodão preto é perfeito para um estilo urbano moderno.</p>
+                </div>
+            </div>
+            <div id="modalImagem1" class="modal-imagem" onclick="fecharModalImagem(1)">
+                <span class="fechar" onclick="fecharModalImagem(1)">&times;</span>
+                <img class="modal-conteudo" id="imgAmpliada1">
+            </div>
+            <div class="fundo-escuro" id="fundoEscuro1" onclick="fecharModalImagem(1)"></div>
+            <!-- Item 2 -->
+            <div class="item">
+                <div class="image-zoom">
+                    <img src="img/bone2.jpg" alt="Boné 2" class="bone-img" onclick="abrirImagemAmpliada(2)">
+                    <h3>Boné Trucker</h3>
+                    <button class="button-toggle" onclick="exibirDescricao('descricao2')">Ver detalhes</button>
+                    <p id="descricao2" style="display: none;">Confortável e respirável, este boné trucker azul marinho com mesh é ideal para um look casual e descontraído.</p>
+                </div>
+            </div>
+            <div id="modalImagem2" class="modal-imagem" onclick="fecharModalImagem(2)">
+                <span class="fechar" onclick="fecharModalImagem(2)">&times;</span>
+                <img class="modal-conteudo" id="imgAmpliada2">
+            </div>
+            <div class="fundo-escuro" id="fundoEscuro2" onclick="fecharModalImagem(2)"></div>
+            <!-- Item 3 -->
+            <div class="item">
+                <div class="image-zoom">
+                    <img src="img/bone3.jpg" alt="Boné 3" class="bone-img" onclick="abrirImagemAmpliada(3)">
+                    <h3>Boné Strapback</h3>
+                    <button class="button-toggle" onclick="exibirDescricao('descricao3')">Ver detalhes</button>
+                    <p id="descricao3" style="display: none;">Com um toque de sofisticação, este strapback em camurça bege é ajustável e ideal para diversas ocasiões.</p>
+                </div>
+            </div>
+            <div id="modalImagem3" class="modal-imagem" onclick="fecharModalImagem(3)">
+                <span class="fechar" onclick="fecharModalImagem(3)">&times;</span>
+                <img class="modal-conteudo" id="imgAmpliada3">
+            </div>
+            <div class="fundo-escuro" id="fundoEscuro3" onclick="fecharModalImagem(3)"></div>
+            <!-- Item 4 -->
+            <div class="item">
+                <div class="image-zoom">
+                    <img src="img/bone4.jpg" alt="Boné 4" class="bone-img" onclick="abrirImagemAmpliada(4)">
+                    <h3>Boné Bucket </h3>
+                    <button class="button-toggle" onclick="exibirDescricao('descricao4')">Ver detalhes</button>
+                    <p id="descricao4" style="display: none;">Estilo retrô e moderno se encontram neste bucket hat estampado, perfeito para um visual descolado.</p>
+                </div>
+            </div>
+            <div id="modalImagem4" class="modal-imagem" onclick="fecharModalImagem(4)">
+                <span class="fechar" onclick="fecharModalImagem(4)">&times;</span>
+                <img class="modal-conteudo" id="imgAmpliada4">
+            </div>
+            <div class="fundo-escuro" id="fundoEscuro4" onclick="fecharModalImagem(4)"></div>
+            <!-- Item 5 -->
+            <div class="item">
+                <div class="image-zoom">
+                    <img src="img/bone5.jpg" alt="Boné 5" class="bone-img" onclick="abrirImagemAmpliada(5)">
+                    <h3>Boné Aba Reta</h3>
+                    <button class="button-toggle" onclick="exibirDescricao('descricao5')">Ver detalhes</button>
+                    <p id="descricao5" style="display: none;">Um clássico contemporâneo, este boné de aba reta branco com bordado é um complemento versátil para qualquer look.</p>
+                </div>
+            </div>
+            <div id="modalImagem5" class="modal-imagem" onclick="fecharModalImagem(5)">
+                <span class="fechar" onclick="fecharModalImagem(5)">&times;</span>
+                <img class="modal-conteudo" id="imgAmpliada5">
+            </div>
+            <div class="fundo-escuro" id="fundoEscuro5" onclick="fecharModalImagem(5)"></div>
+            <!-- Item 6 -->
+            <div class="item">
+                <div class="image-zoom">
+                    <img src="img/bone6.jpg" alt="Boné 6" class="bone-img" onclick="abrirImagemAmpliada(6)">
+                    <h3>Boné Five Panel</h3>
+                    <button class="button-toggle" onclick="exibirDescricao('descricao6')">Ver detalhes</button>
+                    <p id="descricao6" style="display: none;">Com um design único de cinco painéis, este boné xadrez é uma escolha arrojada para quem procura originalidade.</p>
+                </div>
+            </div>
+            <div id="modalImagem6" class="modal-imagem" onclick="fecharModalImagem(6)">
+                <span class="fechar" onclick="fecharModalImagem(6)">&times;</span>
+                <img class="modal-conteudo" id="imgAmpliada6">
+            </div>
+            <div class="fundo-escuro" id="fundoEscuro6" onclick="fecharModalImagem(6)"></div>
+            <!-- Item 7 -->
+            <div class="item">
+                <div class="image-zoom">
+                    <img src="img/bone7.jpg" alt="Boné 7" class="bone-img" onclick="abrirImagemAmpliada(7)">
+                    <h3>Boné Dad Hat</h3>
+                    <button class="button-toggle" onclick="exibirDescricao('descricao7')">Ver detalhes</button>
+                    <p id="descricao7" style="display: none;">Confortável e casual, este dad hat em denim lavado é uma opção essencial para um visual descontraído.</p>
+                </div>
+            </div>
+            <div id="modalImagem7" class="modal-imagem" onclick="fecharModalImagem(7)">
+                <span class="fechar" onclick="fecharModalImagem(7)">&times;</span>
+                <img class="modal-conteudo" id="imgAmpliada7">
+            </div>
+            <div class="fundo-escuro" id="fundoEscuro7" onclick="fecharModalImagem(7)"></div>
+            <!-- Item 8 -->
+            <div class="item">
+                <div class="image-zoom">
+                    <img src="img/bone8.jpg" alt="Boné 8" class="bone-img" onclick="abrirImagemAmpliada(8)">
+                    <h3>Boné Esportivo</h3>
+                    <button class="button-toggle" onclick="exibirDescricao('descricao8')">Ver detalhes</button>
+                    <p id="descricao8" style="display: none;">Desenvolvido para performance, este boné esportivo cinza oferece conforto e funcionalidade durante atividades físicas.</p>
+                </div>
+            </div>
+            <div id="modalImagem8" class="modal-imagem" onclick="fecharModalImagem(8)">
+                <span class="fechar" onclick="fecharModalImagem(8)">&times;</span>
+                <img class="modal-conteudo" id="imgAmpliada8">
+            </div>
+            <div class="fundo-escuro" id="fundoEscuro8" onclick="fecharModalImagem(8)"></div>
+            <!-- Item 9 -->
+            <div class="item">
+                <div class="image-zoom">
+                    <img src="img/bone9.jpg" alt="Boné 9" class="bone-img" onclick="abrirImagemAmpliada(9)">
+                    <h3>Boné Bucket</h3>
+                    <button class="button-toggle" onclick="exibirDescricao('descricao9')">Ver detalhes</button>
+                    <p id="descricao9" style="display: none;">Prático e estiloso, este bucket hat reversível permite alternar entre dois designs, proporcionando versatilidade.</p>
+                </div>
+            </div>
+            <div id="modalImagem9" class="modal-imagem" onclick="fecharModalImagem(9)">
+                <span class="fechar" onclick="fecharModalImagem(9)">&times;</span>
+                <img class="modal-conteudo" id="imgAmpliada9">
+            </div>
+            <div class="fundo-escuro" id="fundoEscuro9" onclick="fecharModalImagem(9)"></div>
+            <!-- Item 10 -->
+            <div class="item">
+                <div class="image-zoom">
+                    <img src="img/bone10.jpg" alt="Boné 10" class="bone-img" onclick="abrirImagemAmpliada(10)">
+                    <h3>Boné Vintage</h3>
+                    <button class="button-toggle" onclick="exibirDescricao('descricao10')">Ver detalhes</button>
+                    <p id="descricao10" style="display: none;">Um toque de nostalgia e elegância se combinam neste boné vintage de veludo cotelê, ideal para um estilo clássico e refinado.</p>
+                </div>
+            </div>
+            <div id="modalImagem10" class="modal-imagem" onclick="fecharModalImagem(10)">
+                <span class="fechar" onclick="fecharModalImagem(10)">&times;</span>
+                <img class="modal-conteudo" id="imgAmpliada10">
+            </div>
+            <div class="fundo-escuro" id="fundoEscuro10" onclick="fecharModalImagem(10)"></div>
+        </div>
+    </main>
+    <div id="cupomModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Use o cupom "Guigo" e ganhe 20% de desconto!</p>
+        </div>
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="js/exibirDescricao.js"></script>
+    <script src="js/abrirImagemApliada.js"></script>
+    <script src="js/popUp.js"></script>
+</body>
+</html>
